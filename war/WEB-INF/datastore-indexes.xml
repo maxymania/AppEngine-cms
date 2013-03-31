@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+    <datastore-index kind="Article" ancestor="false">
+        <property name="__key__" direction="desc" />
+    </datastore-index>
+	<!--
+    <datastore-index kind="Blogentry" ancestor="false">
+        <property name="pubdate" direction="desc" />
+    </datastore-index>
+	-->
+    <datastore-index kind="Comment" ancestor="true" source="auto">
+        <property name="pubdate" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="LHlink" ancestor="false" source="auto">
+        <property name="cat" direction="asc"/>
+        <property name="text" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="Hlink" ancestor="false" source="auto">
+        <property name="cat" direction="asc"/>
+        <property name="text" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="FileRsrc" ancestor="false">
+        <property name="created" direction="asc" />
+        <property name="created" direction="desc" />
+    </datastore-index>
+</datastore-indexes>
