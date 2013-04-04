@@ -8,7 +8,7 @@ HlinkManager hlman = new HlinkManager();
 				<li class="widget-container widget_links"><h3 class="widget-title"><%=EscapeUtils.escape(cat) %></h3>
 				<ul>
 				<%
-				for(Hlink lnk:hlman.getHLinks(50, 0, cat)){
+				for(LHlink lnk:hlman.getLHLinks(50, 0, cat)){
 				%>
 					<li><a href="<%=lnk.href.toString() %>"><%=EscapeUtils.escape(lnk.text) %></a></li>
 				<% } %>
